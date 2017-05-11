@@ -36,6 +36,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -62,6 +64,11 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Connected Services\ServiceIvendAPI\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -85,6 +92,282 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Connected Services\ServiceIvendAPI\IntegrationService1.wsdl" />
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.AccountsReceivable.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.AlternateItem.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.AttributeMaster.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.Bank.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.BarcodeInformation.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.BarCodeMask.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.Batch.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.Country.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.Coupon.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.Currency.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.Customer.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.CustomerCatalog.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.CustomerDiscountGroup.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.CustomerGroup.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.CustomerGroupDiscount.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.CustomerPriceGroup.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.CustomerSummery.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.DeliveryPackage.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.Employee.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.Enterprise.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.ExchangeRate.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.GiftCertificate.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.GiftCertificateMaster.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.GoodsIssue.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.GoodsReceipt.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.GoodsReceiptPO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.GoodsReturn.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.IntegrationQueue.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.InventoryCount.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.InventoryItem.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.InventoryUpdate.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.LineAttribute.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.LineDiscountGroup.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.Location.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.LocationStockTransfer.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.LoyaltyCardInformation.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.LoyaltyPrePrintedCards.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.LoyaltySetup.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.LoyaltyTransaction.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.Manufacturer.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.ManufacturerGroupDiscount.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.PaymentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.PaymentType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.PointsDetails.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.PortalLicence.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.PostDelivery.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.PostTransaction.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.PriceList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.PriceMatrix.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.Product.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.ProductBOM.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.ProductCost.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.ProductDiscountGroup.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.ProductGroup.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.ProductGroupDiscount.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.ProductImage.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.ProductSurcharge.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.ProductUpsell.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.ProductVariant.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.PromotionBonusBuys.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.PurchaseOrder.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.PurchasePrice.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.ReasonCode.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.ReplicationSendDump.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.RetailProfile.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.SaleAttribute.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.SalesPrice.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.Serial.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.ShippingType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.SpecialPriceDiscountGroup.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.SpecialPricing.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.State.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.StockTransfer.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.StockTransferRequisition.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.Store.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.Subsidiary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.Surcharge.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.TaxCode.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.TaxCodeCondition.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.Transaction.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.TransactionDeliveryInformation.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.UDT.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.UOM.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.UOMGroup.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.UPCTranslation.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.UpdateMaster.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.UserDefinedTable.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.Vendor.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.VendorGroup.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.VendorProductMapping.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceIvendAPI\IvendAPI.ServiceIvendAPI.Warehouse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -92,6 +375,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ServiceIvendAPI\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceIvendAPI\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceIvendAPI\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceIvendAPI\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceIvendAPI\iVendAPI1.disco" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
